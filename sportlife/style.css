@@ -1,0 +1,80 @@
+body {
+    overflow: hidden;
+}
+
+
+video {
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+h2{
+    color: white;
+}
+
+.texto{
+    position: relative;
+    z-index: 2;
+}
+
+.logo{
+    position: relative;
+    z-index: 2;
+    margin-top: 49px;
+    margin-left: 70px;
+}
+.vida{
+    margin-top: 200px;
+    margin-left: 42px;
+}
+
+.btn{
+    margin-left: 346px;
+    margin-top: 10px;
+}
+.btn-bd-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet);
+    --bs-btn-border-color: var(--bd-violet);
+    --bs-btn-border-radius: .5rem;
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  }
+
+.pon{
+    margin-top: 200px;
+}
+
+.fat{
+    margin-top: 230px;
+    width: 50%;
+    height: 50%;
+}
+
+.cuadrado-2 {
+    margin-top: 98%;
+    margin-left: 25%;
+}
+.flecha{
+    margin-left: 74%;
+    margin-top: -19%;
+}
+
+.logo2{
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    margin-left: 42px;
+}
+.flecha{
+    margin-left: 74%;
+    margin-top: -19%;
+}   
