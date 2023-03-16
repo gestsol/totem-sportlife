@@ -1,13 +1,37 @@
-    .home {
-    position: absolute ;
-    top: 0;
-    left: 0;
-    width: 100%;
+  .home {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
   }
 
-  .flecha{
-    margin-left: 92.8%;
-    margin-top: 74px;
+  .flecha {
+      position: fixed;
+      margin-left: 92.8%;
+      margin-top: 74px;
+      z-index: 2;
+  }
+  
+  .logo {
+
+      position: fixed;
+      z-index: 2;
+      margin-top: 3%;
+      margin-left: 5%;
+  }
+  header {
+      position: relative;
+      height: 100px
+  }
+
+  footer {
+    height: 100px;
     position: relative;
-    z-index: 2;
-}   
+   
+}
+.cuadrado-2 {
+    margin-top: -241px;
+    margin-left: 45.2%;
+    position: fixed;
+}
+  
