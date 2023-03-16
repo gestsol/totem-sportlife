@@ -13,13 +13,13 @@ video {
 .logo {
     position: relative;
     z-index: 2;
-    margin-top: 49px;
-    margin-left: 140px;
+    margin-top: 3%;
+    margin-left: 5%;
 }
 
 .cuadrado-2 {
-    margin-top: 89.7%;
-    margin-left: 31.6%;
+    margin-top: 90.3%;
+    margin-left: 34%;
 }
 
 .texto {
@@ -58,7 +58,7 @@ video {
     float: left;
     background: white;
     height: 100px;
-    width: 243px;
+    width: 215px;
     padding-bottom: 0px;
     margin: -220px;
     margin-top: 78px;
@@ -94,7 +94,7 @@ hr {
 
 #site-search{
     margin-top: 30px;
-    margin-left: -400px;
+    margin-left: -335px;
     padding-right: 40%;
 }
 
@@ -103,8 +103,10 @@ hr {
 }
 
 .flecha{
-    margin-left: 91.1%;
-    margin-bottom: 4%;
-    margin-top: -111px;
+        margin-left: 92%;
+        margin-top: -97px;
+        margin-bottom: 3%;
+    position: relative;
+    z-index: 2;
 }
 

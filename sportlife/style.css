@@ -22,12 +22,12 @@ h2{
 .logo{
     position: relative;
     z-index: 2;
-    margin-top: 49px;
-    margin-left: 70px;
+    margin-top: 3%;
+    margin-left: 5%;
 }
 .vida{
-    margin-top: 200px;
-    margin-left: 42px;
+    margin-top: 180px;
+    margin-left: 8px;
 }
 
 .btn{
@@ -54,27 +54,20 @@ h2{
 }
 
 .fat{
-    margin-top: 230px;
+    margin-top: 220px;
     width: 50%;
     height: 50%;
 }
 
 .cuadrado-2 {
-    margin-top: 98%;
+    margin-top: 95%;
     margin-left: 25%;
 }
-.flecha{
-    margin-left: 74%;
-    margin-top: -19%;
-}
 
-.logo2{
+
+.flecha{
+    margin-left: 92%;
+    margin-top: -5%;
     position: relative;
     z-index: 2;
-    margin-top: 10px;
-    margin-left: 42px;
-}
-.flecha{
-    margin-left: 74%;
-    margin-top: -19%;
 }   
