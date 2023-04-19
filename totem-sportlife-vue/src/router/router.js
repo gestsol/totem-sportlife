@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './../pages/home.vue'
-import Index from './../pages/Index.vue'
+// import Index from './../pages/Index.vue'
 import Inicio from './../pages/Inicio.vue'
 import Saber from './../pages/Saber.vue'
 import Promo from './../pages/Promo.vue'
@@ -21,7 +21,7 @@ const routes = [
     {
         path: '/index',
         name: 'index',
-        component: Index
+        component: Inicio
     },
 
     {
