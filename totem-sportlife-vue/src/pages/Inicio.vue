@@ -4,7 +4,7 @@
     <video class="w-full absolute top-0 left-0"
       src="./../assets/video/video1.mp4"
       type="video.mp4"
-      autoplay="true"
+      onclick="this.paused ? this.play() : this.pause();"
       loop="true"
     ></video>
     <div class="relative z-10 mt-[3%] ml-[5%]">

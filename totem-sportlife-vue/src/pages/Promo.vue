@@ -5,7 +5,7 @@
     <video
       src="./../assets/video/video2.mp4"
       type="video.mp4"
-      autoplay="true"
+      onclick="this.paused ? this.play() : this.pause();"
       loop="true"
     ></video>
 
