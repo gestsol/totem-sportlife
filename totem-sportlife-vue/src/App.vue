@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-idle class="z-50" :events="['mousemove', 'keypress', 'mousedown', 'touchstart']" />
-    <marco />
+    <marco/>
     <router-view></router-view>
     <footer-vue />
   </div>
