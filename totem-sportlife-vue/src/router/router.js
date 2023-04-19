@@ -9,7 +9,7 @@ import Pago from './../pages/Pago.vue'
 const routes = [
     {
         path: '/',
-        redirect: '/home'
+        redirect: '/inicio'
     },
 
     {
