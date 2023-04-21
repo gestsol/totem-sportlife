@@ -23,16 +23,21 @@
 <script>
 export default {
   computed: {
+    //require() no funciona con vite, con esta propiedad consigo la url de la imagen
     srcImagen() {
       return new URL(`../assets/img/${this.nombreImagen}`, import.meta.url).href;
     },
   },
 
   props: {
+    //name de la ruta declarado en router
     nombreRuta: {
       String,
       required: true,
     },
+
+    //El ancho y el alto utilizan clases de tailwind. Esto tiene de prefijo w- / h- 
+    //para usar una medida exacta, utilizar []  ej: [20px] / [20%]
     ancho: {
       String,
       required: true,
@@ -41,10 +46,15 @@ export default {
       String,
       required: true,
     },
+
+    //Texto dentro del cuadro. Se lee como html para poder agregar etiquetas como <br>
     cuerpoTexto: {
       String,
       required: true,
     },
+    
+    //Fin de la ruta de la imagen. Utiliza imagenes que están en assets/img.
+    //escribir nombre completo del archivo como imagen.png
     nombreImagen: {
       String,
       required: true,
