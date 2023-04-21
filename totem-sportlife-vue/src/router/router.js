@@ -5,6 +5,8 @@ import Inicio from './../pages/Inicio.vue'
 import Saber from './../pages/Saber.vue'
 import Promo from './../pages/Promo.vue'
 import Pago from './../pages/Pago.vue'
+import QR from './../pages/QR.vue'
+// import Test from './../pages/Test.vue'
 
 const routes = [
     {
@@ -47,6 +49,17 @@ const routes = [
         name: 'pago',
         component: Pago
     },
+
+    // {
+    //     path: '/test',
+    //     name: 'test',
+    //     component: Test
+    // },
+    {
+        path: '/qr',
+        name: 'qr',
+        component: QR
+    }
 
 
     // {

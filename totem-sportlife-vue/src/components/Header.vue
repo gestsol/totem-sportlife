@@ -1,18 +1,19 @@
 <template>
-  <header class="relative h-[100px] z-50">
-    <div class="fixed ml-[92.8%] mt-[74px] z-10">
-      <router-link :to="{ name: 'index' }"
-        ><img src="./../assets/img/flecha.svg"
-      /></router-link>
-    </div>
-    <div v-if="logo == true" class="fixed mt-[3%] ml-[5%] z-10">
-      <router-link :to="{ name: 'home' }">
+  <header>
+    <div v-if="logo == true">
+      <router-link class="fixed top-14 left-24 z-10" :to="{ name: 'home' }">
         <img v-if="colorLogo == 'azul'" src="./../assets/img/logoazul.svg" />
         <img
           v-else-if="colorLogo == 'blanco'"
           src="./../assets/img/logoblanco1.svg"
         />
       </router-link>
+    </div>
+
+    <div>
+      <router-link class="fixed top-16 right-24 z-10" :class="{'pt-[1.35rem]': !this.logo}" :to="{ name: 'index' }"
+        ><img src="./../assets/img/flecha.svg"
+      /></router-link>
     </div>
   </header>
 </template>

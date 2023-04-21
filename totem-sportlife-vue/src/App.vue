@@ -1,16 +1,12 @@
 <template>
   <div>
-    <v-idle class="z-50" :events="['mousemove', 'keypress', 'mousedown', 'touchstart']" :duration="30" @idle="cambiarRuta" />
+    <!-- <v-idle class="hidden" :events="['mousemove', 'keypress', 'mousedown', 'touchstart']" :duration="3" @idle="cambiarRuta" /> -->
     <marco/>
     <router-view></router-view>
-    <footer-vue />
   </div>
 </template>
 <script>
-import FooterVue from "./components/Footer.vue";
 import Marco from "./components/Marco.vue";
-
-
 
 export default {
   methods:{
@@ -22,7 +18,6 @@ export default {
   },
 
   components: {
-    FooterVue,
     Marco,
   },
 };
