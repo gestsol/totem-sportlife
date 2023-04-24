@@ -11,7 +11,6 @@
       onclick="this.paused ? this.play() : this.pause();"
       loop="true"
       autoplay
-      muted
     ></video>
 
     <div class="flex flex-row justify-between fixed w-screen top-80 px-32">
@@ -28,14 +27,7 @@
         :nombreImagen="'minagritando.png'"
         :cuerpoTexto="'COTIZA<br/>AQUÍ TU <br/>PLAN<br/>'"
       />
-
-      <button
-        class="fixed bottom-16 right-24 z-10"
-        :class="{ 'pt-[1.35rem]': !this.logo }"
-        @click="desmutearVideo"
-      >
-        <img src="./../assets/img/flecha.svg" />
-      </button>
+      
     </div>
     <footer-vue />
   </div>
@@ -54,11 +46,6 @@ export default {
     };
   },
   components: { HeaderVue, FooterVue, ImagenTexto, Spinner },
-  methods: {
-    desmutearVideo: () => {
-      document.querySelector("video").muted = !document.querySelector("video").muted;
-    },
-  },
 };
 </script>
 
