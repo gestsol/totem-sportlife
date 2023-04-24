@@ -1,9 +1,10 @@
 <template>
   <div>
-    <spinner v-show="cargando"/>
+    <spinner v-show="cargando" />
     <header-vue :logo="true" colorLogo="blanco"></header-vue>
 
-     <video v-on:loadeddata="cargando = false"
+    <video
+      v-on:loadeddata="cargando = false"
       class="w-full absolute top-0 left-0"
       src="./../assets/video/video1.mp4"
       type="video.mp4"
@@ -28,6 +29,13 @@
         :cuerpoTexto="'COTIZA<br/>AQUÍ TU <br/>PLAN<br/>'"
       />
 
+      <button
+        class="fixed bottom-16 right-24 z-10"
+        :class="{ 'pt-[1.35rem]': !this.logo }"
+        @click="desmutearVideo"
+      >
+        <img src="./../assets/img/flecha.svg" />
+      </button>
     </div>
     <footer-vue />
   </div>
@@ -40,15 +48,19 @@ import ImagenTexto from "../components/ImagenTexto.vue";
 import Spinner from "../components/Spinner.vue";
 
 export default {
-  data(){
-    return{
-      cargando: true
-    }
+  data() {
+    return {
+      cargando: true,
+    };
   },
   components: { HeaderVue, FooterVue, ImagenTexto, Spinner },
+  methods: {
+    desmutearVideo: () => {
+      document.querySelector("video").muted = !document.querySelector("video").muted;
+    },
+  },
 };
 </script>
 
 <style>
-
 </style>

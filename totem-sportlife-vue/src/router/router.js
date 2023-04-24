@@ -6,6 +6,8 @@ import Saber from './../pages/Saber.vue'
 import Promo from './../pages/Promo.vue'
 import Pago from './../pages/Pago.vue'
 import QR from './../pages/QR.vue'
+import Compra from './../pages/Compra.vue'
+import Contacto from './../pages/Contacto.vue'
 // import Test from './../pages/Test.vue'
 
 const routes = [
@@ -50,15 +52,21 @@ const routes = [
         component: Pago
     },
 
-    // {
-    //     path: '/test',
-    //     name: 'test',
-    //     component: Test
-    // },
     {
         path: '/qr',
-        name: 'qr',
-        component: QR
+        component: QR,
+        children: [
+            {
+                path: 'compra',
+                name: 'compra',
+                component: Compra
+            },
+            {
+                path: 'contacto',
+                name: 'contacto',
+                component: Contacto
+            }
+        ]
     }
 
 
