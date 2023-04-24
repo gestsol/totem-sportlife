@@ -1,8 +1,10 @@
 <template>
   <div>
+    <spinner v-show="cargando"/>
     <header-vue colorLogo="blanco" :logo="true" />
 
-     <video
+
+     <video v-on:loadeddata="cargando = false"
       class="w-full absolute top-0 left-0"
       src="./../assets/video/video2.mp4"
       type="video.mp4"
@@ -53,6 +55,7 @@
 import HeaderVue from "../components/Header.vue";
 import FooterVue from "../components/Footer.vue";
 import ImagenTexto from "../components/ImagenTexto.vue";
+import Spinner from '../components/Spinner.vue';
 
 export default {
   data() {
@@ -75,13 +78,20 @@ export default {
           cuerpoTexto: "12 <br/> MESES",
         },
       ],
+      cargando: true
     };
   },
   components: {
     HeaderVue,
     FooterVue,
     ImagenTexto,
+    Spinner,
   },
+  methods:{
+    mensaje:() => {
+      console.log('hola')
+    }
+  }
 };
 </script>
   

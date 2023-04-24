@@ -1,19 +1,17 @@
 <template>
   <div>
+    <spinner v-show="cargando"/>
     <header-vue :logo="true" colorLogo="blanco"></header-vue>
 
-    <!-- <video
+     <video v-on:loadeddata="cargando = false"
       class="w-full absolute top-0 left-0"
       src="./../assets/video/video1.mp4"
       type="video.mp4"
       onclick="this.paused ? this.play() : this.pause();"
       loop="true"
-    ></video> -->
-
-    <img
-      class="w-full absolute top-0 left-0"
-      src="./../assets/video/placeholder1.png"
-    />
+      autoplay
+      muted
+    ></video>
 
     <div class="flex flex-row justify-between fixed w-screen top-80 px-32">
       <div class="z-10">
@@ -39,9 +37,15 @@
 import HeaderVue from "../components/Header.vue";
 import FooterVue from "../components/Footer.vue";
 import ImagenTexto from "../components/ImagenTexto.vue";
+import Spinner from "../components/Spinner.vue";
 
 export default {
-  components: { HeaderVue, FooterVue, ImagenTexto },
+  data(){
+    return{
+      cargando: true
+    }
+  },
+  components: { HeaderVue, FooterVue, ImagenTexto, Spinner },
 };
 </script>
 
