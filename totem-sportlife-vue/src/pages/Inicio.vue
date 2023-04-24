@@ -24,8 +24,8 @@
 
       <imagen-texto
         :nombreRuta="'promo'"
-        :alto="'[544px]'"
-        :ancho="'[316px]'"
+        :alto="'544px'"
+        :ancho="'316px'"
         :nombreImagen="'minagritando.png'"
         :cuerpoTexto="'COTIZA<br/>AQUÍ TU <br/>PLAN<br/>'"
       />

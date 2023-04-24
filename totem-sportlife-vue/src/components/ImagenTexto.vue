@@ -1,11 +1,10 @@
 <template>
   <div class="z-10">
     <router-link :to="{ name: nombreRuta }">
-      <div
-        class="flex flex-col justify-center"
-        :class="['w-' + ancho, 'h-' + alto]"
+      <div        
+        class='flex flex-col justify-center'
         :id="id"
-        :style="{ 'background-image': 'url(' + srcImagen + ')' }"
+        :style="{ 'background-image': 'url(' + srcImagen + ')', 'width': ancho, 'height':alto }"
         style="background-size: 100% 100%"
       >
         <div
@@ -22,6 +21,7 @@
 
 <script>
 export default {
+  
   computed: {
     //require() no funciona con vite, con esta propiedad consigo la url de la imagen
     srcImagen() {

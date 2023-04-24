@@ -2,33 +2,35 @@
   <div>
     <header-vue colorLogo="blanco" :logo="true" />
 
-    <!-- <video
+     <video
       class="w-full absolute top-0 left-0"
       src="./../assets/video/video2.mp4"
       type="video.mp4"
       onclick="this.paused ? this.play() : this.pause();"
       loop="true"
-    ></video> -->
+      autoplay
+      muted
+    ></video>
 
-    <img
+    <!-- <img
       class="w-full absolute top-0 left-0"
       src="./../assets/video/placeholder2.png"
-    />
+    /> -->
 
     <div class="z-10 fixed right-24 top-80">
       <div class="flex flex-row gap-3">
         <imagen-texto
           v-for="imagen in imagenesMeses"
           :key="imagen.id"
-          :ancho="44"
-          :alto="64"
+          :ancho="'11rem'"
+          :alto="'16rem'"
           :nombreRuta="'qr'"
           :nombreImagen="imagen.nombreImagen"
           :cuerpoTexto="imagen.cuerpoTexto"
         />
 
         <div
-          class="fixed text-6xl border-dotted rounded-3xl border-white border-4 w-5/12 h-2/6 top-96 -ml-6"
+          class="fixed border-dotted rounded-3xl border-white border-4 w-5/12 h-2/6 top-96 right-[4.5rem]"
         ></div>
 
         <div class="top-[62%] right-[23.5rem] fixed">
