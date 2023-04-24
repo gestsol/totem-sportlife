@@ -11,7 +11,6 @@
       onclick="this.paused ? this.play() : this.pause();"
       loop="true"
       autoplay
-      muted
     ></video>
 
     <!-- <img
