@@ -12,7 +12,7 @@
     "
   >
     <img
-      src="./../assets/img/sportlifelogo .svg"
+      src="./../assets/img/sportlifelogo.svg"
       class="h-[40px] fixed left-[900px]"
     />
     <moon-loader color="#ffffff" size="200px" class="mx-auto" />
