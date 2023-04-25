@@ -1,19 +1,33 @@
 <template>
-  <div class="w-full h-full z-50 bg-white absolute flex flex-col justify-center">
-    <ring-loader color="#ffa500" size="200px" class="mx-auto" />
+  <div
+    class="w-full h-full z-50 absolute flex flex-col justify-center"
+    style="
+      background: linear-gradient(
+        135deg,
+        rgb(1, 30, 34) 0%,
+        rgba(63, 48, 1) 25%,
+        rgb(8, 50, 43) 50%,
+        rgb(63, 48, 1) 75%
+      );
+    "
+  >
+    <img
+      src="./../assets/img/sportlifelogo .svg"
+      class="h-[40px] fixed left-[900px]"
+    />
+    <moon-loader color="#ffffff" size="200px" class="mx-auto" />
   </div>
 </template>
 
 <script>
-import RingLoader from 'vue-spinner/src/RingLoader.vue'
+import MoonLoader from "vue-spinner/src/MoonLoader.vue";
 
- export default({
-   components: {
-     RingLoader
-   }
- })
+export default {
+  components: {
+    MoonLoader,
+  },
+};
 </script>
 
 <style>
-
 </style>

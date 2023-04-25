@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- v-idle es una librería. Nombre: v-idle-3 -->
-    <!-- <v-idle class="hidden" :events="['mousemove', 'keypress', 'mousedown', 'touchstart']" :duration="3" @idle="cambiarRuta" /> -->
+    <v-idle class="hidden" :events="['mousemove', 'keypress', 'mousedown', 'touchstart']" :duration="30" @idle="cambiarRuta" />
     <marco/>
     <router-view></router-view>
   </div>
