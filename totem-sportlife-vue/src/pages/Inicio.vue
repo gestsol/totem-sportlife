@@ -8,8 +8,7 @@
       class="w-full absolute top-0 left-0"
       src="./../assets/video/video1.mp4"
       type="video.mp4"
-      onclick="this.paused ? this.play() : this.pause();"
-      loop="true"
+      onclick="this.ended || this.paused ? this.play() : this.pause();"
       autoplay
     ></video>
 
