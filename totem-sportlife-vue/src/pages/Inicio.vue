@@ -13,7 +13,7 @@
       autoplay
     ></video>
 
-    <div class="flex flex-row justify-between fixed w-screen top-80 px-32">
+    <div class="flex flex-row justify-between fixed w-screen top-[340px] px-[141px]">
       <div class="z-10">
         <router-link :to="{ name: 'saber' }">
           <img src="./../assets/img/videoplaceholderinicio.png" />

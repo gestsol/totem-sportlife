@@ -18,21 +18,21 @@
       src="./../assets/video/placeholder2.png"
     /> -->
 
-    <div class="z-10 fixed right-24 top-80">
-      <div class="flex flex-row gap-3 pr-14">
+    <div class="z-10 fixed left-[1075px] top-[347px]">
+      <div class="flex flex-row gap-[7px] pr-14">
         <imagen-texto
           v-for="imagen in imagenesMeses"
           :key="imagen.id"
-          :ancho="'10rem'"
-          :alto="'15rem'"
+          :ancho="'160px'"
+          :alto="'240px'"
           :nombreRuta="'compra'"
           :nombreImagen="imagen.nombreImagen"
           :cuerpoTexto="imagen.cuerpoTexto"
         />
 
-        <div class="fixed w-5/12 h-2/6 top-96 right-[4.5rem]">
+        <div class="fixed top-[429px] left-[1032px]">
           <router-link :to="{name: 'compra'}">
-            <img src="./../assets/img/carroCompra.svg" />
+            <img src="./../assets/img/carroCompra.svg" height="407px" />
           </router-link>
         </div>
       </div>

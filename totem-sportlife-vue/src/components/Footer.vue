@@ -1,8 +1,8 @@
 <template>
   <footer>
-    <div class="top-[76%] left-1/2 -ml-24 fixed">
+    <div class="top-[816px] left-[871px] fixed">
       <router-link :to="{ name: 'contacto' }">
-        <img src="./../assets/img/Componente1-1.svg" width="180" height="180" />
+        <img src="./../assets/img/Componente1-1.svg" width="179" height="179" />
       </router-link>
     </div>
   </footer>

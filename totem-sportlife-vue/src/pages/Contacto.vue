@@ -1,10 +1,10 @@
 <template>
     <img
-      class="w-[900px] h-[550px] mx-auto"
+      class="w-[815px] h-[528px] ml-[469px]"
       src="./../assets/img/contacto.png"
       alt="codigoQr"
     />
-    <h3 class="font-semibold text-4xl text-center text-white pt-10">
+    <h3 class="text-[35px] text-center text-white pt-[27px]">
         Escanea el código QR con tu smartphone para comunicarte con nuestra
     asistente de servicio.
     </h3>
@@ -14,5 +14,10 @@
   export default {};
   </script>
   
-  <style>
+  <style scoped>
+
+h3{
+  font-family: "Helvetica Neue";
+}
+
   </style>

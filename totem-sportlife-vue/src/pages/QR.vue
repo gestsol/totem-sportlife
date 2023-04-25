@@ -2,7 +2,7 @@
   <div>
     <header-vue :logo="true" colorLogo="blanco" />
     <div class="h-screen w-screen" id="fondoqr">
-      <div class="flex flex-col justify-center pt-72">
+      <div class="flex flex-col pt-[277px]">
         <router-view></router-view>
       </div>
 
