@@ -12,11 +12,25 @@
       autoplay
     ></video>
 
-    <div class="flex flex-row justify-between fixed w-screen top-[340px] px-[141px]">
-      <div class="z-10">
-        <router-link :to="{ name: 'saber' }">
-          <img src="./../assets/img/videoplaceholderinicio.png" />
-        </router-link>
+    <div
+      class="flex flex-row justify-between fixed w-screen top-[340px] px-[141px]"
+    >
+      <div class="z-10 border-[#3092B8] border-[12px] rounded-[12px]">
+        <video
+          v-show="finVideoIzquierda == false"
+          src="./../assets/video/REMOTMEDIA.mp4"
+          type="video.mp4"
+          @ended="finVideoIzquierda = true"
+          autoplay
+          muted
+          width="294"
+          height="523"
+        ></video>
+        <img
+          src="./../assets/img/bajoVideoTexto.svg"
+          alt=""
+          v-show="finVideoIzquierda"
+        />
       </div>
 
       <imagen-texto
@@ -27,8 +41,10 @@
         :cuerpoTexto="html"
       />
 
-      <img src="./../assets/img/iconoMano.svg" class="fixed top-[732px] left-[1605px] z-50"/>
-      
+      <img
+        src="./../assets/img/iconoMano.svg"
+        class="fixed top-[732px] left-[1605px] z-50"
+      />
     </div>
     <footer-vue />
   </div>
@@ -44,9 +60,11 @@ export default {
   data() {
     return {
       cargando: true,
-      html: 'COTIZA <br> AQUI TU <br> <span class="text-5xl"> PLAN </span>'
+      finVideoIzquierda: false,
+      html: 'COTIZA <br> AQUI TU <br> <span class="text-5xl"> PLAN </span>',
     };
   },
+
   components: { HeaderVue, FooterVue, ImagenTexto, Spinner },
 };
 </script>

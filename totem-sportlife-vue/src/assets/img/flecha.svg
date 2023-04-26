@@ -1,3 +1,29 @@
-<svg id="Icon_ionic-ios-arrow-dropleft-circle" data-name="Icon ionic-ios-arrow-dropleft-circle" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
-  <path id="Icon_ionic-ios-arrow-dropleft-circle-2" data-name="Icon ionic-ios-arrow-dropleft-circle" d="M38.375,3.375a35,35,0,1,0,35,35A34.995,34.995,0,0,0,38.375,3.375Zm7.3,48.647a3.26,3.26,0,0,1,0,4.594,3.208,3.208,0,0,1-2.288.942,3.264,3.264,0,0,1-2.305-.959L25.267,40.731a3.244,3.244,0,0,1,.1-4.476l16.053-16.1a3.248,3.248,0,0,1,4.594,4.594L32.233,38.375Z" transform="translate(-3.375 -3.375)" fill="#1d0"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <filter id="Icon_ionic-ios-arrow-dropleft-circle" x="0" y="0" width="85" height="85" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.557"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Icon_ionic-ios-arrow-dropleft-circle-2" x="0" y="0" width="85" height="85" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#fdf2f2" flood-opacity="0.576" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Icon_ionic-ios-arrow-dropleft-circle-3" data-name="Icon ionic-ios-arrow-dropleft-circle" transform="translate(7.5 2.5)">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, -7.5, -2.5)" filter="url(#Icon_ionic-ios-arrow-dropleft-circle)">
+        <path id="Icon_ionic-ios-arrow-dropleft-circle-4" data-name="Icon ionic-ios-arrow-dropleft-circle" d="M38.375,3.375a35,35,0,1,0,35,35A34.995,34.995,0,0,0,38.375,3.375Zm7.3,48.647a3.26,3.26,0,0,1,0,4.594,3.208,3.208,0,0,1-2.288.942,3.264,3.264,0,0,1-2.305-.959L25.267,40.731a3.244,3.244,0,0,1,.1-4.476l16.053-16.1a3.248,3.248,0,0,1,4.594,4.594L32.233,38.375Z" transform="translate(4.13 -0.87)" fill="#1d0"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -7.5, -2.5)" filter="url(#Icon_ionic-ios-arrow-dropleft-circle-2)">
+        <path id="Icon_ionic-ios-arrow-dropleft-circle-5" data-name="Icon ionic-ios-arrow-dropleft-circle" d="M38.375,3.375a35,35,0,1,0,35,35A34.995,34.995,0,0,0,38.375,3.375Zm7.3,48.647a3.26,3.26,0,0,1,0,4.594,3.208,3.208,0,0,1-2.288.942,3.264,3.264,0,0,1-2.305-.959L25.267,40.731a3.244,3.244,0,0,1,.1-4.476l16.053-16.1a3.248,3.248,0,0,1,4.594,4.594L32.233,38.375Z" transform="translate(4.13 -0.87)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
 </svg>
