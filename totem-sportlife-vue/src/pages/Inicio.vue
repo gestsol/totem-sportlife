@@ -35,10 +35,11 @@
 
       <imagen-texto
         :nombreRuta="'promo'"
-        :alto="'544px'"
+        :alto="'520px'"
         :ancho="'316px'"
         :nombreImagen="'minagritando.png'"
         :cuerpoTexto="html"
+        class="border-[#3092B8] border-[12px] rounded-[12px]"
       />
 
       <img
