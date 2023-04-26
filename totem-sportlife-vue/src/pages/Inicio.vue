@@ -37,7 +37,7 @@
 <script>
 import HeaderVue from "../components/Header.vue";
 import FooterVue from "../components/Footer.vue";
-import ImagenTexto from "../components/ImagenTexto.vue";
+import ImagenTexto from "../components/ImagenTextoDos.vue";
 import Spinner from "../components/Spinner.vue";
 
 export default {
