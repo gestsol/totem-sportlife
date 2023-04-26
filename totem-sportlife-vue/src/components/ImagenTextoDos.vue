@@ -11,7 +11,7 @@
             class="text-white text-center flex w-fit mx-auto rounded-sm"
           >
   
-            <img src="./../assets/img/cotizaTuPlan.png" alt="">
+            <img src="./../assets/img/cotizaTuPlan.svg" alt="">
   
           </div>
         </div>
