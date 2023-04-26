@@ -11,8 +11,9 @@
           class="text-white text-center bg-black/60 p-3 text-3xl font-bold flex w-fit mx-auto rounded-sm"
         >
           <span v-html="cuerpoTexto">
-            
+
           </span>
+
         </div>
       </div>
     </router-link>
@@ -59,9 +60,15 @@ export default {
       String,
       required: true,
     },
+    
   },
 };
 </script>
 
 <style>
+
+span{
+  font-family: "Helvetica Neue";
+}
+
 </style>

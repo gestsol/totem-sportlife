@@ -77,17 +77,9 @@ export default {
     ImagenTexto,
     Spinner,
   },
-  methods: {
-    mensaje: () => {
-      console.log("hola");
-    },
-  },
 };
 </script>
   
 <style scoped>
-#mes-1 {
-  background-image: url("./../assets/img/1mes.png");
-  background-size: 100% 100%;
-}
+
 </style>
