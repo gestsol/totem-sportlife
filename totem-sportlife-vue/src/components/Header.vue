@@ -18,13 +18,21 @@
       </router-link>
     </div>
 
-    <div>
+    <div v-if="!rutaFlechaAtras">
       <router-link
         class="fixed top-[71px] left-[1710px] z-10"
         :class="{ 'pt-[1.35rem]': !this.logo }"
         :to="{ name: 'index' }"
         ><img src="./../assets/img/flecha.svg"
       /></router-link>
+    </div>
+    <div v-else>
+      <button
+        class="fixed top-[71px] left-[1710px] z-10"
+        :class="{ 'pt-[1.35rem]': !this.logo }"
+        @click="$router.go(-1)"
+        ><img src="./../assets/img/flecha.svg"
+      /></button>
     </div>
   </header>
 </template>
@@ -34,6 +42,7 @@ export default {
   props: {
     logo: Boolean,
     colorLogo: String,
+    rutaFlechaAtras:  Boolean,
   },
 };
 </script>

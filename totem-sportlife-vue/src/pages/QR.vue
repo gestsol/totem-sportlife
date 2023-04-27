@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header-vue :logo="true" colorLogo="blanco" />
+    <header-vue :logo="true" colorLogo="blanco" :rutaFlechaAtras="true" />
     <div class="h-screen w-screen" id="fondoqr">
       <div class="flex flex-col pt-[277px]">
         <router-view></router-view>

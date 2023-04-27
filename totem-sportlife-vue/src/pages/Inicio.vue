@@ -37,9 +37,9 @@
         :nombreRuta="'promo'"
         :alto="'520px'"
         :ancho="'316px'"
-        :nombreImagen="'minagritando.png'"
+        :nombreImagen="'minaGritando.png'"
         :cuerpoTexto="html"
-        class="border-[#3092B8] border-[12px] rounded-[12px]"
+        class="border-[#3092B8] border-[12px] rounded-[12px] bg-[#3092B8]"
       />
 
       <img

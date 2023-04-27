@@ -7,6 +7,7 @@
   <h3 class="text-[35px] text-center text-white pt-[27px]">
     Escanea el código QR con tu smartphone para cotizar nuestros planes.
   </h3>
+
 </template>
 
 <script>
