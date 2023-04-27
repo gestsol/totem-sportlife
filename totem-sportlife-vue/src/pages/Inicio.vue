@@ -28,7 +28,6 @@
         ></video>
         <img
           src="./../assets/img/bajoVideoTexto.svg"
-          alt=""
           v-show="finVideoIzquierda"
         />
       </div>
@@ -36,7 +35,7 @@
       <imagen-texto
         :nombreRuta="'promo'"
         :alto="'520px'"
-        :ancho="'316px'"
+        :ancho="'292px'"
         :nombreImagen="'minagritando.png'"
         :cuerpoTexto="html"
         class="border-[#3092B8] border-[12px] rounded-[12px] bg-[#3092B8]"
