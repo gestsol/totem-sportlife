@@ -5,17 +5,15 @@
 
     <video
       v-on:loadeddata="cargando = false"
-      class="w-full absolute top-0 left-0"
+      class="w-full absolute top-0 left-0 -z-20"
       src="./../assets/video/video1.mp4"
       type="video.mp4"
       onclick="this.ended || this.paused ? this.play() : this.pause();"
       autoplay
     ></video>
 
-    <div
-      class="flex flex-row justify-between fixed w-screen top-[340px] px-[141px]"
-    >
-      <div class="z-10 border-[#3092B8] border-[12px] rounded-[12px]">
+    <div>
+      <div class="z-10 border-[#3092B8] border-[12px] rounded-[12px] fixed top-[351px] left-[152px]">
         <video
           v-show="finVideoIzquierda == false"
           src="./../assets/video/REMOTMEDIA.mp4"
@@ -32,13 +30,13 @@
         />
       </div>
 
-      <imagen-texto
+       <imagen-texto
         :nombreRuta="'promo'"
         :alto="'520px'"
         :ancho="'292px'"
         :nombreImagen="'minagritando.png'"
         :cuerpoTexto="html"
-        class="border-[#3092B8] border-[12px] rounded-[12px] bg-[#3092B8]"
+        class="border-[#3092B8] border-[12px] rounded-[12px] bg-[#3092B8] fixed top-[339px] left-[1464px]"
       />
 
       <img

@@ -5,7 +5,7 @@
 
     <video
       v-on:loadeddata="cargando = false"
-      class="w-full absolute top-0 left-0"
+      class="w-full absolute top-0 left-0 -z-20"
       src="./../assets/video/video2.mp4"
       type="video.mp4"
       onclick="this.ended || this.paused ? this.play() : this.pause();"

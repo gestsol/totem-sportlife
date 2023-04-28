@@ -1,6 +1,6 @@
 <template>
   <img
-    class="w-[815px] h-[528px] ml-[469px]"
+    class="w-[815px] h-[528px] ml-[469px] z-20" 
     src="./../assets/img/compra.png"
     alt="codigoQr"
   />

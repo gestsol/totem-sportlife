@@ -1,5 +1,6 @@
 <template>
   <div>
+    <marco/>
     <header-vue :logo="true" colorLogo="blanco" :rutaFlechaAtras="true" />
     <div class="h-screen w-screen" id="fondoqr">
       <div class="flex flex-col pt-[277px]">
@@ -12,9 +13,11 @@
 
 <script>
 import HeaderVue from "../components/Header.vue";
+import Marco from "../components/Marco.vue";
 export default {
   components: {
     HeaderVue,
+    Marco
   },
 };
 </script>
