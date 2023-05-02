@@ -9,7 +9,6 @@
       src="./../assets/video/video1.mp4"
       type="video.mp4"
       onclick="this.ended || this.paused ? this.play() : this.pause();"
-      autoplay
     ></video>
 
     <div>
@@ -41,7 +40,7 @@
 
       <img
         src="./../assets/img/iconoMano.svg"
-        class="fixed top-[732px] left-[1605px] z-50"
+        class="fixed top-[732px] left-[1605px] z-40"
       />
     </div>
     <footer-vue />

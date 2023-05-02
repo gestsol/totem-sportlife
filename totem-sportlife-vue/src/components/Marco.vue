@@ -5,6 +5,7 @@
    <img
     class="fixed w-screen h-screen pointer-events-none"
     src="https://drive.google.com/uc?id=11pdQMeExjyedKCyUhW7-U9ZLRiC1WoGi"
+    
     alt="marco"
   />
 </template>
