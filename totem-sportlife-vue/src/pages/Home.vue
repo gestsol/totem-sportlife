@@ -1,18 +1,23 @@
 <template>
-    <header-vue/>
-    <iframe src="https://www.sportlifezonanorte.cl/" width="100%" height="1080px" frameborder="0"></iframe>
+  <header-vue />
+  <iframe
+    src="https://www.sportlifezonanorte.cl/"
+    width="100%"
+    height="1080px"
+    frameborder="0"
+    sandbox
+  ></iframe>
 </template>
 
 <script>
-import HeaderVue from '../components/Header.vue';
+import HeaderVue from "../components/Header.vue";
 
-export default{
-    components: {
-        HeaderVue
-    }
-}
+export default {
+  components: {
+    HeaderVue,
+  },
+};
 </script>
 
 <style>
-
 </style>
