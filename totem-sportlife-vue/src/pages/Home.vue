@@ -5,7 +5,7 @@
     width="100%"
     height="1080px"
     frameborder="0"
-    sandbox
+    sandbox="allow-scripts"
   ></iframe>
 </template>
 
