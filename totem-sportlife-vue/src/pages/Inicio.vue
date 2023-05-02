@@ -61,6 +61,9 @@ export default {
       html: 'COTIZA <br> AQUI TU <br> <span class="text-5xl"> PLAN </span>',
     };
   },
+  mounted(){
+    document.querySelector('video').pause()
+  },
 
   components: { HeaderVue, FooterVue, ImagenTexto, Spinner },
 };
