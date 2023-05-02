@@ -4,7 +4,7 @@
     <header-vue :logo="true" colorLogo="blanco"></header-vue>
 
     <video
-      v-on:loadeddata="cargando = false"
+      v-on:loadeddata="videoCargado"
       class="w-full absolute top-0 left-0 -z-20"
       src="./../assets/video/video1.mp4"
       type="video.mp4"
@@ -61,8 +61,11 @@ export default {
       html: 'COTIZA <br> AQUI TU <br> <span class="text-5xl"> PLAN </span>',
     };
   },
-  mounted(){
-    document.querySelector('video').pause()
+  methods:{
+    videoCargado(){
+      this.cargando = false;
+      document.querySelector('video').pause()
+    }
   },
 
   components: { HeaderVue, FooterVue, ImagenTexto, Spinner },
