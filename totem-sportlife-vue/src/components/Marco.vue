@@ -1,4 +1,3 @@
-
 <template>
   <!-- Imagen delantera para eventos o temporadas festivas.  -->
   <!-- la url no se toca. Los cambios se hacen en google drive -->

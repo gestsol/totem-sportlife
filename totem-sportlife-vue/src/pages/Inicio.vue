@@ -1,8 +1,9 @@
 <template>
   <div>
     <spinner v-show="cargando" />
-    <header-vue :logo="true" colorLogo="blanco"></header-vue>
+    <header-vue :logo="true" :flecha="false" />
 
+    <!-- Video de fondo -->
     <video
       v-on:loadeddata="videoCargado"
       class="w-full absolute top-0 left-0 -z-20"
@@ -11,8 +12,11 @@
       onclick="this.ended || this.paused ? this.play() : this.pause();"
     ></video>
 
+    <!-- Cuadro Izquierdo. Una vez el video termina, este se oculta para mostrar la imagen -->
     <div>
-      <div class="z-10 border-[#3092B8] border-[12px] rounded-[12px] fixed top-[351px] left-[152px]">
+      <div
+        class="z-10 border-[#3092B8] border-[12px] rounded-[12px] fixed top-[351px] left-[152px]"
+      >
         <video
           v-show="finVideoIzquierda == false"
           src="./../assets/video/REMOTMEDIA.mp4"
@@ -29,14 +33,26 @@
         />
       </div>
 
-       <imagen-texto
-        :nombreRuta="'promo'"
-        :alto="'520px'"
-        :ancho="'292px'"
-        :nombreImagen="'minagritando.png'"
-        :cuerpoTexto="html"
+      <!-- Cuadro derecho y el conjunto de imagenes que lo componen -->
+      <div
         class="border-[#3092B8] border-[12px] rounded-[12px] bg-[#3092B8] fixed top-[339px] left-[1464px]"
-      />
+      >
+        <div class="z-10">
+          <router-link :to="{ name: 'promo' }">
+            <div
+              class="flex flex-col justify-center w-[292px] h-[520px] bg-cover"
+              :style="{
+                'background-image': 'url(' + srcImagen + ')',
+              }"
+              style="background-size: 100% 100%)"
+            >
+              <div class="text-white text-center flex w-fit mx-auto rounded-sm">
+                <img src="./../assets/img/cotizaTuPlan.svg" alt="" />
+              </div>
+            </div>
+          </router-link>
+        </div>
+      </div>
 
       <img
         src="./../assets/img/iconoMano.svg"
@@ -50,25 +66,34 @@
 <script>
 import HeaderVue from "../components/Header.vue";
 import FooterVue from "../components/Footer.vue";
-import ImagenTexto from "../components/ImagenTextoDos.vue";
 import Spinner from "../components/Spinner.vue";
 
 export default {
   data() {
     return {
+      //Verifica si ya cargó el video de fondo
       cargando: true,
+
+      //Verifica si el video del cuadro izquierdo acabó
       finVideoIzquierda: false,
-      html: 'COTIZA <br> AQUI TU <br> <span class="text-5xl"> PLAN </span>',
     };
   },
-  methods:{
-    videoCargado(){
+  methods: {
+    //Una vez el video carga y empieza, este se pausa porque si el autoplay se quita,
+    //el fondo queda sin imagen
+    videoCargado() {
       this.cargando = false;
-      document.querySelector('video').pause()
-    }
+      document.querySelector("video").pause();
+    },
+  },
+  computed: {
+    //require() no funciona con vite, con esta propiedad consigo la url de la imagen
+    srcImagen() {
+      return new URL(`../assets/img/minagritando.png`, import.meta.url).href;
+    },
   },
 
-  components: { HeaderVue, FooterVue, ImagenTexto, Spinner },
+  components: { HeaderVue, FooterVue, Spinner },
 };
 </script>
 

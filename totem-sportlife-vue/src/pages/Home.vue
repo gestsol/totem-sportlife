@@ -1,11 +1,11 @@
 <template>
-  <header-vue />
+  <header-vue :logo="false" :flecha="true" />
   <iframe
     src="https://www.sportlifezonanorte.cl/"
     width="100%"
     height="1080px"
     frameborder="0"
-    sandbox="allow-scripts"
+    sandbox="allow-scripts allow-same-origin"
   ></iframe>
 </template>
 

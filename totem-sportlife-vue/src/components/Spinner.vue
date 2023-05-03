@@ -1,4 +1,5 @@
 <template>
+  <!-- fondo de gradiente -->
   <div
     class="w-full h-full z-50 absolute flex flex-col justify-center"
     style="
@@ -15,6 +16,8 @@
       src="./../assets/img/sportlifelogo.svg"
       class="h-[40px] fixed left-[900px]"
     />
+
+    <!-- Ver vue-spinner en npmjs -->
     <moon-loader color="#ffffff" size="200px" class="mx-auto" />
   </div>
 </template>
