@@ -19,7 +19,7 @@
       >
         <video
           v-show="finVideoIzquierda == false"
-          src="./../assets/video/REMOTMEDIA.mp4"
+          src="./../assets/video/REMOTMEDIA.mov"
           type="video.mp4"
           @ended="finVideoIzquierda = true"
           autoplay
