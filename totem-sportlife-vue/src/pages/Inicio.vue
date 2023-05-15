@@ -25,8 +25,8 @@
           autoplay
           loop
           muted
-          width="294"
-          height="523"
+          width="292"
+          height="520"
         ></video>
         <img
           src="./../assets/img/bajoVideoTexto.svg"
@@ -36,7 +36,7 @@
 
       <!-- Cuadro derecho y el conjunto de imagenes que lo componen -->
       <div
-        class="border-[#3092B8] border-[12px] rounded-[12px] bg-[#3092B8] fixed top-[339px] left-[1464px]"
+        class="border-[#3092B8] border-[12px] rounded-[12px] bg-[#3092B8] fixed top-[351px] left-[1464px]"
       >
         <div class="z-10">
           <router-link :to="{ name: 'promo' }">
