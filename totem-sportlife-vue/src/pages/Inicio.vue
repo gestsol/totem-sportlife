@@ -5,7 +5,6 @@
 
     <!-- Video de fondo -->
     <video
-      v-on:loadeddata="videoCargado"
       class="w-full absolute top-0 left-0 -z-20"
       src="./../assets/video/video1.mp4"
       type="video.mp4"
@@ -21,6 +20,7 @@
         <video
           v-show="finVideoIzquierda == false"
           src="./../assets/video/REMOTMEDIA.mov"
+          v-on:loadeddata="videoCargado"
           type="video.mp4"
           autoplay
           loop
