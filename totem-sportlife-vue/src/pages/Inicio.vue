@@ -17,12 +17,13 @@
       <div
         class="z-10 border-[#3092B8] border-[12px] rounded-[12px] fixed top-[351px] left-[152px]"
       >
+      <!-- esto va en la etiqueta de abajo para mostrar la imagen con texto @ended="finVideoIzquierda = true" -->
         <video
           v-show="finVideoIzquierda == false"
           src="./../assets/video/REMOTMEDIA.mov"
           type="video.mp4"
-          @ended="finVideoIzquierda = true"
           autoplay
+          loop
           muted
           width="294"
           height="523"
