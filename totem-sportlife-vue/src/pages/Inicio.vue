@@ -105,7 +105,10 @@ export default {
       return new URL(`../assets/img/minagritando.png`, import.meta.url).href;
     },
     pausarFondo(){
-      document.querySelector("#video-fondo").pause();
+      setTimeout(() => {
+        document.querySelector("#video-fondo").pause();  
+      }, 10);
+      
     },
     repetirVideoIzquierda(){
       document.querySelector("#video-izquierda").play();
