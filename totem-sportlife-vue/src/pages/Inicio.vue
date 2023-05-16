@@ -9,7 +9,9 @@
       class="w-full absolute top-0 left-0 -z-20"
       src="./../assets/video/video1.mp4"
       type="video.mp4"
-      @click="toggleVideoFondo"
+      @click="togglePlayVideoFondo"
+      @loadeddata="pausarFondo"
+      @ended="toggleMutedVideoIzquierda"
     ></video>
 
     <!-- Cuadro Izquierdo. Una vez el video termina, este se oculta para mostrar la imagen -->
@@ -27,6 +29,7 @@
           type="video.mp4"
           autoplay
           loop
+          @ended="repetirVideoIzquierda"
         ></video>
         <img
           src="./../assets/img/bajoVideoTexto.svg"
@@ -80,27 +83,34 @@ export default {
     };
   },
   methods: {
-    toggleVideoFondo() {
+    togglePlayVideoFondo() {
       const videoFondo = document.querySelector("#video-fondo")
-      const videoIzquierda = document.querySelector("#video-izquierda")
+      
       if(videoFondo.ended || videoFondo.paused ){
         videoFondo.play()
-        videoIzquierda.muted = true
+        this.toggleMutedVideoIzquierda()
       }else{
         videoFondo.pause();
-        videoIzquierda.muted = false
+        this.toggleMutedVideoIzquierda()
       }
     },
+    toggleMutedVideoIzquierda(){
+      const videoIzquierda = document.querySelector("#video-izquierda")
+      videoIzquierda.muted = !videoIzquierda.muted
+    }
   },
   computed: {
     //require() no funciona con vite, con esta propiedad consigo la url de la imagen
     srcImagen() {
       return new URL(`../assets/img/minagritando.png`, import.meta.url).href;
     },
+    pausarFondo(){
+      document.querySelector("#video-fondo").pause();
+    },
+    repetirVideoIzquierda(){
+      document.querySelector("#video-izquierda").play();
+    }
   },
-  mounted(){
-    document.querySelector("#video-fondo").pause();
-  },  
 
   components: { HeaderVue, FooterVue, Spinner },
 };
