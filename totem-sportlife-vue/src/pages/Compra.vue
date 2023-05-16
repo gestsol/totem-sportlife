@@ -4,6 +4,12 @@
     :src="srcImagen"
     alt="codigoQr"
   />
+
+  <img
+    class="w-[460px] h-[460px] ml-[790px] mt-[30px] z-20 fixed"
+    :src="srcImagen2"
+    alt="codigoQr"
+  />
   <h3 class="text-[35px] text-center text-white pt-[27px]">
     Escanea el código QR con tu smartphone para cotizar nuestros planes.
   </h3>
@@ -21,6 +27,10 @@ export default {
     //require() no funciona con vite, con esta propiedad consigo la url de la imagen
     srcImagen() {
       return new URL(`../assets/img/qr${this.mes}mes.png`, import.meta.url)
+        .href;
+    },
+    srcImagen2() {
+      return new URL(`../assets/img/QR${this.mes}.png`, import.meta.url)
         .href;
     },
   },
