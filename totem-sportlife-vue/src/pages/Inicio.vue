@@ -5,10 +5,11 @@
 
     <!-- Video de fondo -->
     <video
+      id="video-fondo"
       class="w-full absolute top-0 left-0 -z-20"
       src="./../assets/video/video1.mp4"
       type="video.mp4"
-      onclick="this.ended || this.paused ? this.play() : this.pause();"
+      @click="toggleVideoFondo"
     ></video>
 
     <!-- Cuadro Izquierdo. Una vez el video termina, este se oculta para mostrar la imagen -->
@@ -18,14 +19,14 @@
       >
       <!-- esto va en la etiqueta de abajo para mostrar la imagen con texto @ended="finVideoIzquierda = true" -->
         <video
+          id="video-izquierda"
           class="w-[292px] h-[520px]"
           v-show="finVideoIzquierda == false"
           src="./../assets/video/REMOTMEDIA.mov"
-          v-on:loadeddata="videoCargado"
+          v-on:loadeddata="cargando = false"
           type="video.mp4"
           autoplay
           loop
-          muted
         ></video>
         <img
           src="./../assets/img/bajoVideoTexto.svg"
@@ -79,11 +80,16 @@ export default {
     };
   },
   methods: {
-    //Una vez el video carga y empieza, este se pausa porque si el autoplay se quita,
-    //el fondo queda sin imagen
-    videoCargado() {
-      this.cargando = false;
-      document.querySelector("video").pause();
+    toggleVideoFondo() {
+      const videoFondo = document.querySelector("#video-fondo")
+      const videoIzquierda = document.querySelector("#video-izquierda")
+      if(videoFondo.ended || videoFondo.paused ){
+        videoFondo.play()
+        videoIzquierda.muted = true
+      }else{
+        videoFondo.pause();
+        videoIzquierda.muted = false
+      }
     },
   },
   computed: {
@@ -92,6 +98,9 @@ export default {
       return new URL(`../assets/img/minagritando.png`, import.meta.url).href;
     },
   },
+  mounted(){
+    document.querySelector("#video-fondo").pause();
+  },  
 
   components: { HeaderVue, FooterVue, Spinner },
 };
