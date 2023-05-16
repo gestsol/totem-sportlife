@@ -18,6 +18,7 @@
       >
       <!-- esto va en la etiqueta de abajo para mostrar la imagen con texto @ended="finVideoIzquierda = true" -->
         <video
+          class="w-[292px] h-[520px]"
           v-show="finVideoIzquierda == false"
           src="./../assets/video/REMOTMEDIA.mov"
           v-on:loadeddata="videoCargado"
@@ -25,8 +26,6 @@
           autoplay
           loop
           muted
-          width="292"
-          height="520"
         ></video>
         <img
           src="./../assets/img/bajoVideoTexto.svg"
