@@ -119,6 +119,7 @@ export default {
             this.finVideoIzquierda = !this.finVideoIzquierda
             const videoIzquierda = document.querySelector("#video-izquierda")
             videoIzquierda.muted = this.finVideoIzquierda
+            videoIzquierda.play()
 
         }
     },
