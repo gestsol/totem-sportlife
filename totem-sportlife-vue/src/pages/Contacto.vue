@@ -1,7 +1,7 @@
 <template>
   <img
-    class="w-[815px] h-[528px] ml-[469px] z-20"
-    src="./../assets/img/contacto.svg"
+    class="w-[815px] h-[528px] m-auto z-20"
+    src="./../assets/img/qr_call.png"
     alt="codigoQr"
   />
   <h3 class="text-[35px] text-center text-white pt-[27px]">

@@ -1,6 +1,6 @@
 <template>
   <img
-    class="w-[460px] h-[460px] m-[auto] z-20"
+    class="w-[815px] h-[528px] m-[auto] z-20"
     :src="srcImagen2"
     alt="codigoQr"
   />
@@ -31,7 +31,7 @@ export default {
         .href;
     },
     srcImagen2() {
-      return new URL(`../assets/img/PROMOS_JUN23.png`, import.meta.url)
+      return new URL(`../assets/img/qr_promotions.png`, import.meta.url)
         .href;
     },
   },
