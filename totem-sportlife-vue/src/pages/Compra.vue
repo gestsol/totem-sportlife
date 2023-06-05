@@ -1,13 +1,14 @@
 <template>
   <img
-    class="w-[815px] h-[528px] ml-[469px] z-20"
-    :src="srcImagen"
+    class="w-[460px] h-[460px] m-[auto] z-20"
+    :src="srcImagen2"
     alt="codigoQr"
   />
 
   <img
-    class="w-[460px] h-[460px] ml-[790px] mt-[30px] z-20 fixed"
+    class="w-[460px] h-[460px] m-[auto] mt-[30px] z-20 fixed"
     :src="srcImagen2"
+    v-show="false"
     alt="codigoQr"
   />
   <h3 class="text-[35px] text-center text-white pt-[27px]">
@@ -30,7 +31,7 @@ export default {
         .href;
     },
     srcImagen2() {
-      return new URL(`../assets/img/QR${this.mes}.png`, import.meta.url)
+      return new URL(`../assets/img/PROMOS_JUN23.png`, import.meta.url)
         .href;
     },
   },
