@@ -4,7 +4,7 @@
     <div v-if="logo == true">
       <router-link
         class="fixed top-[71px] left-[141px] z-10"
-        :to="{ name: 'home' }"
+        :to="{ name: 'inicio' }"
       >
         <img class="w-[337px] h-[157]" src="./../assets/img/logoblanco1.svg" />
       </router-link>
