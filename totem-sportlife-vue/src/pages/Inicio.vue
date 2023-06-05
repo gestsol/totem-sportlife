@@ -33,17 +33,20 @@
                 <video
                         id="video-izquierda"
                         class="w-[292px] h-[520px]"
-                        v-show="finVideoIzquierda == false"
+                        v-show="!finVideoIzquierda"
                         src="./../assets/video/REMOTMEDIA.mov"
                         v-on:loadeddata="cargando = false"
                         type="video.mp4"
                         autoplay
                         loop
+                        @click="toggleImageVideoIzquierda"
                         @ended="repetirVideoIzquierda"
                 ></video>
                 <img
+                        @click="toggleImageVideoIzquierda"
                         src="./../assets/img/bajoVideoTexto.svg"
                         v-show="finVideoIzquierda"
+                        alt=""
                 />
             </div>
 
@@ -111,6 +114,12 @@ export default {
         toggleMutedVideoIzquierda() {
             const videoIzquierda = document.querySelector("#video-izquierda")
             videoIzquierda.muted = !videoIzquierda.muted
+        },
+        toggleImageVideoIzquierda() {
+            this.finVideoIzquierda = !this.finVideoIzquierda
+            const videoIzquierda = document.querySelector("#video-izquierda")
+            videoIzquierda.muted = this.finVideoIzquierda
+
         }
     },
     computed: {
