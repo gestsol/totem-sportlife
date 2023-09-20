@@ -7,7 +7,7 @@
         <video
                 id="video-fondo"
                 class="w-full absolute top-0 left-0 -z-20"
-                src="./../assets/video/video1.mp4"
+                src="https://drive.google.com/uc?export=download&id=1RW5xIzM7q5Nt1FaL8pfYAx1IslUhlqMZ"
                 type="video.mp4"
                 @click="togglePlayVideoFondo"
                 @loadeddata="pausarFondo"
@@ -34,7 +34,7 @@
                         id="video-izquierda"
                         class="w-[292px] h-[520px]"
                         v-show="!finVideoIzquierda"
-                        src="./../assets/video/REMOTMEDIA.mov"
+                        src="https://drive.google.com/uc?export=download&id=1YP3nBqG4cu9ysmWvh088rI1Fw8MDiqcT"
                         v-on:loadeddata="cargando = false"
                         type="video.mp4"
                         autoplay
