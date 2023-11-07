@@ -31,7 +31,7 @@ export default {
         .href;
     },
     srcImagen2() {
-      return new URL(`../assets/img/qr_promotions.png`, import.meta.url)
+      return new URL(`../assets/img/qr_new.jpg`, import.meta.url)
         .href;
     },
   },
