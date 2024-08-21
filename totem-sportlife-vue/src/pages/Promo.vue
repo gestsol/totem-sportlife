@@ -6,7 +6,7 @@
     <video
       v-on:loadeddata="cargando = false"
       class="w-full absolute top-0 left-0 -z-20"
-      src="https://drive.google.com/uc?export=download&id=1M3zObasGcsdckFkxirI4O-pTnrWYK5lh"
+      src="https://s1.ntic.cl/totem-sportlife/promo.mp4"
       type="video.mp4"
       muted
       onclick="this.ended || this.paused ? this.play() : this.pause();"
